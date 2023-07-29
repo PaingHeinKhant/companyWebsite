@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer components {
+  .gradient-text{
+    @apply inline-block text-transparent  bg-clip-text bg-gradient
+  }
+  .border-gradient{
+    @apply inline-block text-transparent  bg-clip-text bg-gradient
+  }
+
+}
+
+.bg-gradient{
+  background-image: linear-gradient(to left, #12c2e9, #00baf7, #20afff, #5ba1ff, #8a90ff, #ae81f4, #cc70e2, #e55dcb, #f450af, #fb4991, #fc4975, #f64f59);
+}
+
+.bg-gradient-btn{
+  background-image: linear-gradient(to right, #12c2e9, #00baf7, #20afff, #5ba1ff, #8a90ff, #ae81f4, #cc70e2, #e55dcb, #f450af, #fb4991, #fc4975, #f64f59);
+}
